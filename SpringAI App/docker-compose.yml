@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: ticketing-system
+    environment:
+      POSTGRES_DB: ticketingSystem
+      POSTGRES_USER: springai
+      POSTGRES_PASSWORD: 1234
+      TZ: Asia/Kolkata
+    ports:
+      - "5432:5432"
